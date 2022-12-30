@@ -1,5 +1,5 @@
 /*Consola*/
-console.log(alert("No modificar código de la página."));
+console.log("No modificar código de la página.");
 
 var swiper = new Swiper(".slide-container", {
     slidesPerView: 4,
