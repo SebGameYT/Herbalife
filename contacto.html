@@ -37,20 +37,20 @@
                     <h4>Ingrese los siguientes datos para contactarnos con usted:</h4>
                     <br>
                     <p>Nombre(s):</p>
-                    <input placeholder="Nombre(s)..." type="text" name="nombres" id="nombres" required>
+                    <input placeholder="Nombre(s)..." type="text" name="nombre" id="nombre" minlength="4" maxlength="45" required>
                     <br>
                     <p>Apellido(s):</p>
-                    <input placeholder="Apellido(s)..." type="text" name="apellidos" id="apellidos" required>
+                    <input placeholder="Apellido(s)..." type="text" name="apellidos" id="apellidos" minlength="5" maxlength="50" required>
                     <br>
                     <p>No celular:</p>
-                    <input placeholder="Numero celular..." type="number" name="numero" id="numero">
+                    <input placeholder="Numero celular..." type="number" name="n_cel" id="n_cel">
                     <br>
-                    <p>Correo elc:</p>
-                    <input placeholder="Correo..." type="email" name="correo" id="correo">
+                    <p>Correo:</p>
+                    <input placeholder="Correo..." type="email" name="email" id="email">
                     <br>
                     <p>Ingrese una descripcion:</p>
                     <br>
-                    <textarea placeholder="Ingrese una descripcion..." name="info" id="info" cols="30" rows="7" required></textarea>
+                    <textarea placeholder="Ingrese una descripcion..." name="mensaje" id="mensaje" cols="30" rows="7" minlength="10" maxlength="500" required></textarea>
                     <br><br>
                     <button>Enviar datos</button>
                     <br><br>

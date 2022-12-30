@@ -17,14 +17,17 @@ form h4 {
 
 form input {
     margin: 5px;
+    height: 1.5rem;
     border-style: solid;
     border-color: black;
+    text-align: center;
 }
 
 form textarea {
     resize: vertical;
     border-radius: 5px;
     border-color: #42DF79;
+    text-align: justify;
 }
 
 form button {
