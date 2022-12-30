@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" href="multimedia/img/logo.png">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="img">
+                <img src="multimedia/img/logo.png" alt="Herbalife" title="Herbalife">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="main">
+            <h1>Contacto</h1>
+            <p id="lema"><b>“No hagas dieta, ten un estilo de vida activo y saludable”.</b></p>
+            <br>
+            <div class="form">
+                <form action="db.php" method="post">
+                    <br>
+                    <h4>Ingrese los siguientes datos para contactarnos con usted:</h4>
+                    <br>
+                    <p>Nombre(s):</p>
+                    <input placeholder="Nombre(s)..." type="text" name="nombres" id="nombres" required>
+                    <br>
+                    <p>Apellido(s):</p>
+                    <input placeholder="Apellido(s)..." type="text" name="apellidos" id="apellidos" required>
+                    <br>
+                    <p>No celular:</p>
+                    <input placeholder="Numero celular..." type="number" name="numero" id="numero">
+                    <br>
+                    <p>Correo elc:</p>
+                    <input placeholder="Correo..." type="email" name="correo" id="correo">
+                    <br>
+                    <p>Ingrese una descripcion:</p>
+                    <br>
+                    <textarea placeholder="Ingrese una descripcion..." name="info" id="info" cols="30" rows="7" required></textarea>
+                    <br><br>
+                    <button>Enviar datos</button>
+                    <br><br>
+                    <button type="reset">Borrar datos</button>
+                    <br><br>
+                </form>
+            </div>
+        </section>
+        <aside>
+            <div class="social-bar">
+                <a href="#" class="icon icon-facebook" target="_blank"></a>
+                <a href="#" class="icon icon-whatsapp" target="_blank"></a>
+                <a href="#" class="icon icon-instagram" target="_blank"></a>
+                <a href="#" class="icon icon-twitter" target="_blank"></a>
+                <a href="#" class="icon icon-mail4" target="_blank"></a>
+                <a href="#" class="icon icon-youtube" target="_blank"></a>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer">
+                <p><b>Paty HERBALIFE 2022-2023 ®</b></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+#lema {
+    font-size: 12px;
+}
+
+form {
+    background-color: azure;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 1;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
+}
+
+form h4 {
+    text-align: center;
+}
+
+form input {
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+form textarea {
+    resize: vertical;
+    border-radius: 5px;
+    border-color: #42DF79;
+}
+
+form button {
+    width: 15%;
+    height: auto;
+    margin-left: 43%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-color: black;
+}
+
+
+/*Media query*/
+
+@media screen and (max-width: 1920px) and (min-width: 481px) {
+    .form {
+        width: 50%;
+        margin-left: 25%;
+    }
+    form p {
+        display: inline-block;
+    }
+    form input {
+        width: 40%;
+        border-radius: 15px;
+        margin-left: 10%;
+    }
+    form textarea {
+        margin-left: 35%;
+    }
+    input::placeholder {
+        color: transparent;
+    }
+    textarea::placeholder {
+        color: transparent;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        width: 92%;
+        margin-left: -10px;
+    }
+    form p {
+        display: none;
+    }
+    form input {
+        margin-left: 7%;
+        width: 84%;
+        border-radius: 5px;
+    }
+    form textarea {
+        margin-left: 14%;
+        width: 70%;
+    }
+    form button {
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .form {
+        width: 95%;
+    }
+}

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCFCFC;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
+}
+
+.img {
+    width: 8%;
+    height: auto;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.links ul {
+    display: flex;
+    margin-top: 15%;
+    margin-right: 20px;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#lema {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #42DF79;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+/*Social-bar*/
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon-facebook {
+    background: #0982FC;
+}
+
+.icon-whatsapp {
+    background: #0FD70F;
+}
+
+.icon-youtube {
+    background: #FF0000;
+}
+
+.icon-instagram {
+    background: #F500DB;
+}
+
+.icon-twitter {
+    background: #0CBFEF;
+}
+
+.icon-mail4 {
+    background: #ff7315;
+}
+
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*Media query*/
+
+@media screen and (max-width: 480px) {
+    .img {
+        width: 20%;
+        height: auto;
+    }
+    .links ul {
+        margin-top: 2rem;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        display: block;
+        height: 110px;
+    }
+    .img {
+        width: 100%;
+        height: 50%;
+    }
+    .img img {
+        margin-top: -15px;
+        margin-left: 25%;
+        width: 50%;
+        height: 200%;
+    }
+    .links {
+        margin-left: 10px;
+    }
+    .main {
+        width: 80%;
+    }
+}
