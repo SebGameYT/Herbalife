@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Conoce mas sobre nosotros, consulta nuestros productos disponibles y horarios de trabajo.">
+    <meta property="og:url" content="https://paty-herbalife-mx.netlify.app/">
+    <meta property="og:title" content="Paty Herbalife Tmx">
     <title>Contacto</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="font.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="icon" href="multimedia/img/logo.png">
 </head>
 
 <body>
+    <script>
+        alert("Los recuadros marcados con '*' deben ser llenados obligatoriamente");
+    </script>
     <div class="contenedor">
         <header>
             <div class="img">
-                <img src="multimedia/img/logo.png" alt="Herbalife" title="Herbalife">
+                <a href="index.html">
+                    <img src="multimedia/img/logo.png" alt="Herbalife" title="Herbalife">
+                </a>
             </div>
             <div class="links">
                 <ul>
@@ -36,19 +46,19 @@
                     <br>
                     <h4>Ingrese los siguientes datos para contactarnos con usted:</h4>
                     <br>
-                    <p>Nombre(s):</p>
+                    <p>Nombre(s): *</p>
                     <input placeholder="Nombre(s)..." type="text" name="nombre" id="nombre" minlength="4" maxlength="45" required>
                     <br>
-                    <p>Apellido(s):</p>
+                    <p>Apellido(s): *</p>
                     <input placeholder="Apellido(s)..." type="text" name="apellidos" id="apellidos" minlength="5" maxlength="50" required>
                     <br>
-                    <p>No celular:</p>
+                    <p>No celular: ⠀</p>
                     <input placeholder="Numero celular..." type="number" name="n_cel" id="n_cel">
                     <br>
-                    <p>Correo:</p>
-                    <input placeholder="Correo..." type="email" name="email" id="email">
+                    <p>Correo: * ⠀⠀</p>
+                    <input placeholder="Correo..." type="email" name="email" id="email" required>
                     <br>
-                    <p>Ingrese una descripcion:</p>
+                    <p>Ingrese una descripcion: *</p>
                     <br>
                     <textarea placeholder="Ingrese una descripcion..." name="mensaje" id="mensaje" cols="30" rows="7" minlength="10" maxlength="500" required></textarea>
                     <br><br>
@@ -69,9 +79,32 @@
                 <a href="#" class="icon icon-youtube" target="_blank"></a>
             </div>
         </aside>
-        <footer>
-            <div class="footer">
-                <p><b>Paty HERBALIFE 2022-2023 ®</b></p>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="index.html">
+                            <img src="multimedia/img/footer.jpg" alt="Herbalife" title="Herbalife">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022-2023 <b>Paty Herbalife Tmx</b> - Todos los Derechos Reservados.</small>
             </div>
         </footer>
     </div>

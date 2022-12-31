@@ -3,9 +3,8 @@
 }
 
 .card {
+    margin-left: 38.5%;
     height: auto;
-    margin-left: 38%;
-    background-color: #42DF79;
     border: 5px;
     border-style: solid;
     border-radius: 15px;
@@ -13,7 +12,13 @@
 
 .fondo {
     width: 100%;
-    height: 100px;
+    height: 80px;
+    border-bottom: 3px;
+}
+
+.fondo img {
+    width: 100%;
+    height: 100%;
 }
 
 .datos {
@@ -44,55 +49,19 @@
     text-align: end;
 }
 
-.textocard p {
-    text-align: justify;
-}
-
-.txtinfo {
-    width: 97%;
-}
-
-.txtinfo p {
-    width: 100%;
-    margin-left: -1px;
-    text-align: justify;
-}
-
 
 /*Media query*/
 
 @media screen and (max-width: 1920px) and (min-width: 481px) {
     .card {
         width: 22%;
-        margin-left: 0;
-    }
-    .textocard {
-        margin-left: 16%;
-        display: flex;
-        width: 90%;
-    }
-    .textocard p {
-        margin-top: -26%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .textocard p {
-        margin-top: -60%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .card {
-        margin-left: -15px;
+        margin-left: -11px;
         width: 92%;
-    }
-    .textocard p {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-    .txtinfo {
-        width: 90%;
     }
 }
 

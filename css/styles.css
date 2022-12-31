@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #FCFCFC;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor {
@@ -35,7 +37,7 @@ header {
 
 .links ul {
     display: flex;
-    margin-top: 15%;
+    margin-top: 13.5%;
     margin-right: 20px;
     list-style: none;
     column-gap: 20px;
@@ -66,13 +68,75 @@ header {
 }
 
 footer {
-    width: 100%;
-    height: auto;
-    background-color: #42DF79;
+    font-size: 12px;
 }
 
-.footer p {
+footer {
+    width: 100%;
+    background-color: #38A11D;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 225px;
+    border-radius: 10px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
     text-align: center;
+    transition: all 300ms ease;
+    border-radius: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #38A11D;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #2C7F17;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
 }
 
 
@@ -139,13 +203,22 @@ footer {
 
 /*Media query*/
 
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .img {
         width: 20%;
         height: auto;
     }
     .links ul {
-        margin-top: 2rem;
+        margin-top: 1.3rem;
         column-gap: 10px;
     }
 }
