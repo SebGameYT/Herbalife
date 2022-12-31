@@ -35,9 +35,6 @@ table tr td {
         display: inline-table;
         width: 50%;
     }
-    table {
-        text-align: end;
-    }
     table tr td {
         display: flex;
         width: 100%;

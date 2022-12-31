@@ -2,57 +2,47 @@ p {
     text-align: center;
 }
 
-table {
+.subs {
+    text-align: center;
+}
+
+.general {
     width: 96%;
+    display: flex;
+}
+
+table {
+    width: 100%;
     background-color: azure;
     border-style: solid;
     border-color: black;
     border-radius: 10px;
+    padding: 1%;
     box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
 }
 
-table tr td {
-    text-align: center;
+table tr {
+    width: 100%;
 }
 
-table tr td a {
-    text-decoration: none;
-    color: blue;
-}
-
-.imagenes img {
-    width: 110px;
+table tr td img {
+    width: 200px;
 }
 
 
 /*Media query*/
 
 @media screen and (max-width: 480px) {
-    .links-p {
+    .general {
         margin-left: -15px;
         width: 95%;
-        height: auto;
     }
     table {
         width: 100%;
     }
-    .productos {
-        display: column;
-    }
-    .imagenes {
-        display: none;
-    }
     table tr td {
         display: flex;
         width: 100%;
-    }
-}
-
-@media screen and (max-width:300px) {
-    .links-p {
-        width: 100%;
-    }
-    .productos {
-        margin-left: -10%;
+        margin-left: 19%;
     }
 }

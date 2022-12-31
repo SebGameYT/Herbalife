@@ -223,7 +223,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 340px) {
     header {
         display: block;
         height: 110px;
@@ -239,9 +239,15 @@ footer {
         height: 200%;
     }
     .links {
-        margin-left: 10px;
+        margin-left: 10%;
     }
     .main {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .links {
+        margin-left: 0;
     }
 }
