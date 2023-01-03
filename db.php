@@ -8,5 +8,9 @@ mysqli_query($conexion, "INSERT into usuarios(nombre, apellidos, n_cel, email, m
 
 mysqli_close($conexion);
 
-echo("Tus datos y mensaje se han enviado correctamente, puedes cerrar esta pestaña.");
+echo("Tus datos y mensaje se han enviado correctamente, puedes cerrar esta pestaña o regresar a una de las siguientes páginas.<br><br>");
+echo("<a href='index.html'>Inicio</a><br><br>");
+echo("<a href='productos.html'>Productos</a><br><br>");
+echo("<a href='horarios.html'>Horarios</a><br><br>");
+echo("<a href='contacto.html'>Contacto</a>");
 ?>

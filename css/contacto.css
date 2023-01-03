@@ -19,6 +19,11 @@ form input {
     text-align: center;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 form textarea {
     resize: vertical;
     border-radius: 5px;
