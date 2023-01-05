@@ -11,7 +11,7 @@ p {
     display: flex;
 }
 
-table {
+.general table {
     width: 100%;
     background-color: azure;
     border-style: solid;
@@ -21,16 +21,22 @@ table {
     box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
 }
 
-table tr {
+.general table tr {
     width: 100%;
 }
 
-table tr td img {
+.general table tr td img {
     width: 200px;
 }
 
 
 /*Media query*/
+
+@media screen and (max-width: 1920px) and (min-width: 481px) {
+    .t-phone {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .general {
@@ -43,6 +49,15 @@ table tr td img {
     table tr td {
         display: flex;
         width: 100%;
-        margin-left: 19%;
+        margin-left: 18%;
+    }
+    .t-pc {
+        display: none;
+    }
+    .t-phone {
+        margin-left: 48%;
+    }
+    .t-phone p {
+        margin-left: -10%;
     }
 }

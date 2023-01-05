@@ -27,10 +27,16 @@ table tr td a {
 .imagenes img {
     width: 110px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .paquetes table tr td {
     width: 33.3%;
+}
+
+.imagenes-combos td img {
+    width: 110px;
+    border-radius: 10px;
 }
 
 
@@ -61,7 +67,7 @@ table tr td a {
         margin-left: 23%;
         padding: 10px;
     }
-    .productos-phone a img {
+    .productos-phone img {
         width: 120px;
         border-radius: 10px;
         margin: 10px;
@@ -75,41 +81,6 @@ table tr td a {
     .paquetes {
         display: none;
     }
-    /*/*Malteadas
-    .links-p {
-        margin-left: -15px;
-        width: 95%;
-        height: auto;
-    }
-    table {
-        width: 100%;
-    }
-    .productos {
-        display: column;
-    }
-    .imagenes {
-        display: none;
-    }
-    table tr td {
-        display: flex;
-        width: 100%;
-    }
-    /*Combos
-    .paquetes {
-        margin-left: -15px;
-        width: 95%;
-        height: auto;
-    }
-    .paquetes table tr td .combos {
-        display: column;
-    }
-    .imagenes-combos {
-        display: none;
-    }
-    .paquetes table tr td {
-        display: flex;
-        width: 100%;
-    }*/
 }
 
 @media screen and (max-width:300px) {
@@ -118,7 +89,7 @@ table tr td a {
         width: 99%;
     }
     .productos-phone a img {
-        margin-left: -5%;
+        margin-left: -4%;
     }
     .links-p {
         display: none;
@@ -126,16 +97,4 @@ table tr td a {
     .paquetes {
         display: none;
     }
-    /*.links-p {
-        width: 100%;
-    }
-    .productos {
-        margin-left: -10%;
-    }
-    .paquetes {
-        width: 100%;
-    }
-    .combos {
-        margin-left: -10%;
-    }*/
 }
