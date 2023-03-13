@@ -1,254 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: #FCFCFC;
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            .contenedor {
+                width: 100%;
+                flex-wrap: wrap;
+                overflow: hidden;
+            }
+            
+            header {
+                width: 100%;
+                height: auto;
+                background-color: #C6F0C7;
+                display: flex;
+                justify-content: space-between;
+                box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
+            }
+            
+            .img {
+                width: 8%;
+                height: auto;
+            }
+            
+            .img img {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .links ul {
+                display: flex;
+                margin-top: 13.5%;
+                margin-right: 20px;
+                list-style: none;
+                column-gap: 20px;
+            }
+            
+            .links ul li a {
+                text-decoration: none;
+                color: black;
+                position: relative;
+            }
 
-body {
-    background-color: #FCFCFC;
-    font-family: 'Open Sans', sans-serif;
-}
+            /*Lineas efecto Hover*/
+            .links ul li a::before,
+            .links ul li a::after {
+                content: '';
+                border-bottom: 2px solid #227122;
+                position: absolute;
+                opacity: 0;
+                transition: 0.2s;
+            }
 
-.contenedor {
-    width: 100%;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
+            .links ul li a::before {
+                bottom: -5px;
+                width: 90%;
+                right: 0;
+            }
 
-header {
-    width: 100%;
-    height: auto;
-    background-color: azure;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
-}
+            .links ul li a::after {
+                bottom: -10px;
+                width: 60%;
+                left: 0;
+            }
 
-.img {
-    width: 8%;
-    height: auto;
-}
+            .links ul li a.activo::before,
+            .links ul li a:hover::before {
+                opacity: 1;
+                width: 70%;
+            }
 
-.img img {
-    width: 100%;
-    height: 100%;
-}
+            .links ul li a.activo::after,
+            .links ul li a:hover::after {
+                opacity: 1;
+                width: 40%;
+            }
 
-.links ul {
-    display: flex;
-    margin-top: 13.5%;
-    margin-right: 20px;
-    list-style: none;
-    column-gap: 20px;
-}
-
-.links ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.main {
-    margin: 20px;
-    box-sizing: border-box;
-}
-
-.main h1 {
-    text-align: center;
-}
-
-.main p {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#lema {
-    text-align: center;
-    font-size: 12px;
-}
-
-footer {
-    font-size: 12px;
-}
-
-footer {
-    width: 100%;
-    background-color: #38A11D;
-}
-
-.pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-
-.pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img {
-    width: 225px;
-    border-radius: 10px;
-}
-
-.pie-pagina .grupo-1 .box h2 {
-    color: black;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .box p {
-    color: black;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-.pie-pagina .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: white;
-    margin-right: 10px;
-    background-color: black;
-    text-align: center;
-    transition: all 300ms ease;
-    border-radius: 10px;
-}
-
-.pie-pagina .grupo-1 .red-social a:hover {
-    color: #38A11D;
-}
-
-.pie-pagina .grupo-2 {
-    background-color: #2C7F17;
-    padding: 15px 10px;
-    text-align: center;
-    color: black;
-}
-
-.pie-pagina .grupo-2 small {
-    font-size: 15px;
-}
-
-
-/*Social-bar*/
-
-.social-bar {
-    position: fixed;
-    right: 0;
-    top: 25%;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 100;
-}
-
-.icon {
-    color: white;
-    text-decoration: none;
-    padding: .7rem;
-    display: flex;
-    transition: all .5s;
-}
-
-.icon-facebook {
-    background: #0982FC;
-}
-
-.icon-whatsapp {
-    background: #0FD70F;
-}
-
-.icon-youtube {
-    background: #FF0000;
-}
-
-.icon-instagram {
-    background: #F500DB;
-}
-
-.icon-twitter {
-    background: #0CBFEF;
-}
-
-.icon-mail4 {
-    background: #ff7315;
-}
-
-.icon:first-child {
-    border-radius: 1rem 0 0 0;
-}
-
-.icon:last-child {
-    border-radius: 0 0 0 1rem;
-}
-
-.icon:hover {
-    padding-right: 3rem;
-    border-radius: 1rem 0 0 1rem;
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-/*Media query*/
-
-@media screen and (max-width: 800px) {
-    .pie-pagina .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .img {
-        width: 20%;
-        height: auto;
-    }
-    .links ul {
-        margin-top: 1.3rem;
-        column-gap: 10px;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    header {
-        display: block;
-        height: 110px;
-    }
-    .img {
-        width: 100%;
-        height: 50%;
-    }
-    .img img {
-        margin-top: -15px;
-        margin-left: 25%;
-        width: 50%;
-        height: 200%;
-    }
-    .links {
-        margin-left: 10%;
-    }
-    .main {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .links {
-        margin-left: 0;
-    }
-}
+            .main {
+                margin: 20px;
+                box-sizing: border-box;
+            }
+            
+            .main h1 {
+                text-align: center;
+            }
+            
+            .main p {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            
+            #lema {
+                text-align: center;
+                font-size: 12px;
+            }
+            
+            footer {
+                font-size: 12px;
+            }
+            
+            footer {
+                width: 100%;
+                background-color: #2F9530;
+            }
+            
+            .pie-pagina .grupo-1 {
+                width: 100%;
+                max-width: 1200px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 50px;
+                padding: 45px 0px;
+            }
+            
+            .pie-pagina .grupo-1 .box figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .pie-pagina .grupo-1 .box figure img {
+                width: 225px;
+                border-radius: 10px;
+            }
+            
+            .pie-pagina .grupo-1 .box h2 {
+                color: black;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            
+            .pie-pagina .grupo-1 .box p {
+                color: black;
+                margin-bottom: 10px;
+                text-align: justify;
+            }
+            
+            .pie-pagina .grupo-1 .red-social a {
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: white;
+                margin-right: 10px;
+                background-color: black;
+                text-align: center;
+                transition: all 300ms ease;
+                border-radius: 10px;
+            }
+            
+            .pie-pagina .grupo-1 .red-social a:hover {
+                color: #2F9530;
+            }
+            
+            .pie-pagina .grupo-2 {
+                background-color: #227122;
+                padding: 15px 10px;
+                text-align: center;
+                color: black;
+            }
+            
+            .pie-pagina .grupo-2 small {
+                font-size: 15px;
+            }
+            /*Social-bar*/
+            
+            .social-bar {
+                position: fixed;
+                right: 0;
+                top: 25%;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                z-index: 100;
+            }
+            
+            .icon {
+                color: white;
+                text-decoration: none;
+                padding: .7rem;
+                display: flex;
+                transition: all .5s;
+            }
+            
+            .icon-facebook {
+                background: #0982FC;
+            }
+            
+            .icon-whatsapp {
+                background: #0FD70F;
+            }
+            
+            .icon-youtube {
+                background: #FF0000;
+            }
+            
+            .icon-instagram {
+                background: #F500DB;
+            }
+            
+            .icon-twitter {
+                background: #0CBFEF;
+            }
+            
+            .icon-mail4 {
+                background: #ff7315;
+            }
+            
+            .icon:first-child {
+                border-radius: 1rem 0 0 0;
+            }
+            
+            .icon:last-child {
+                border-radius: 0 0 0 1rem;
+            }
+            
+            .icon:hover {
+                padding-right: 3rem;
+                border-radius: 1rem 0 0 1rem;
+                box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+            }
+            
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+            /*Media query*/
+            
+            @media screen and (max-width: 800px) {
+                .pie-pagina .grupo-1 {
+                    width: 90%;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 30px;
+                    padding: 35px 0px;
+                }
+            }
+            
+            @media screen and (max-width: 480px) {
+                .img {
+                    width: 20%;
+                    height: auto;
+                }
+                .links ul {
+                    margin-top: 1.3rem;
+                    column-gap: 10px;
+                }
+            }
+            
+            @media screen and (max-width: 340px) {
+                header {
+                    display: block;
+                    height: 110px;
+                }
+                .img {
+                    width: 100%;
+                    height: 50%;
+                }
+                .img img {
+                    margin-top: -15px;
+                    margin-left: 25%;
+                    width: 50%;
+                    height: 200%;
+                }
+                .links {
+                    margin-left: 10%;
+                }
+                .main {
+                    width: 80%;
+                }
+            }
+            
+            @media screen and (max-width: 300px) {
+                .links {
+                    margin-left: 0;
+                }
+            }
