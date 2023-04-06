@@ -1,8 +1,8 @@
 <?php
-$conexion = mysqli_connect("localhost", "root", "sebgameYT1012", "p_herbalife")or die
+$conexion = mysqli_connect("localhost", "root", "sebgameYT1012", "form_herbalife")or die
 ("Problemas con la conexion.");
 
-mysqli_query($conexion, "INSERT into usuarios(nombre, apellidos, n_cel, email, mensaje)values
+mysqli_query($conexion, "INSERT into datos(nombre, apellidos, n_cel, email, mensaje)values
 ('$_REQUEST[nombre]', '$_REQUEST[apellidos]', '$_REQUEST[n_cel]', '$_REQUEST[email]', '$_REQUEST[mensaje]')")or die
 ("Problemas en el select".mysqli_error($conexion));
 
